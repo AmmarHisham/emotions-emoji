@@ -72,11 +72,9 @@ export class NavComponent implements OnInit{
  
   callRoute(data){
     console.log("Routing ",data);
-       let anger = data.emotion.anger;
-       var joy = data.joy;
-       var fear = data.fear;
-       var sadness = data.sadness;
-       var surprise = data.surprise;
+
+       let emotionStatus;
+
 
     this._router.navigate(['./emotions'], { queryParams: { anger: data.emotion.anger,
       joy: data.emotion.joy,fear: data.emotion.fear,sadness: data.emotion.sadness,surprise: data.emotion.surprise,

@@ -30,6 +30,10 @@ export class EmotionsComponent implements OnInit {
     this.route.queryParams.subscribe((params: Params) => {
       this.loading = false;
       this.emotions = Object.create(params,{});
+    
+      let key = Object.keys(params).reduce((a, b) => params[a] > params[b] ? a : b);  
+      console.log( ` max key: ${key}` );
+
     });
 
 
