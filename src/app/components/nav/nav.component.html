@@ -1,0 +1,25 @@
+<br>
+
+<div id="container">
+<div class="row">
+  <div class="col-sm-3 col-md-6 col-lg-4 vertical-menu">
+      <a href="#" class="active" style="background-color: #101010;">Emotions</a>
+      <ul>
+          <li *ngFor="let channal of channelList">
+            <a (click)="call(channal.link)">{{ channal.description }}</a>
+          </li>
+      </ul>
+
+    <br><br><br>
+    <div>
+     <h3 style="background-color: #101010; color: aliceblue;"> User Id : </h3> <input type="text" id="userId" [(ngModel)] ="userId" >
+    </div>
+  </div>
+ 
+  <div class="col-sm-9 col-md-6 col-lg-8">
+    <!-- Router Outlet -->
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+</div>
