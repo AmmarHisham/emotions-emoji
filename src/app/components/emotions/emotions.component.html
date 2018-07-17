@@ -1,24 +1,31 @@
-<br>
-<h1>Recommented data</h1>
-<div id="newShedule">
-   <ul> 
-    <li>
-            Anger : {{emotions.anger}}
-    </li>
-    <li>
-            Joy : {{emotions.joy}}
-    </li>
-    <li>
-            Fear : {{emotions.fear}}
-    </li>
-    <li>
-            sadness : {{emotions.sadness}}
-    </li>
-    <li>
-            surprise : {{emotions.surprise}}
-    </li>
+<div id="container">
+    <div class="row">    
+        <div class="col-sm-3 col-md-6 col-lg-4" id="emojiContainer">
+            <img [src]="myImgUrl" class="emoji">
+        </div>
+        <div class="col-sm-3 col-md-6 col-lg-4 vertical-menu " style="padding-top:260px;">
+                <a href="#" class="active" style="background-color: #101010;width:300px;padding-top:10px;">Emotions</a>
+       <br>
 
-</ul>
+        <ul> 
+            <li>
+                    Anger : {{emotions.anger}}
+            </li>
+            <li>
+                    Joy : {{emotions.joy}}
+            </li>
+            <li>
+                    Fear : {{emotions.fear}}
+            </li>
+            <li>
+                    sadness : {{emotions.sadness}}
+            </li>
+            <li>
+                    surprise : {{emotions.surprise}}
+            </li>
+        </ul>
+        </div>
+    </div>
 </div>
 
 <ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '14px' }"></ngx-loading>

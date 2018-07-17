@@ -3,7 +3,7 @@
 <div id="container">
 <div class="row">
   <div class="col-sm-3 col-md-6 col-lg-4 vertical-menu">
-      <a href="#" class="active" style="background-color: #101010;">Emotions</a>
+      <a href="#" class="active" style="background-color: #101010;">Channals</a>
       <ul>
           <li *ngFor="let channal of channelList">
             <a (click)="call(channal.link)">{{ channal.description }}</a>
@@ -12,7 +12,8 @@
 
     <br><br><br>
     <div>
-     <h3 style="background-color: #101010; color: aliceblue;"> User Id : </h3> <input type="text" id="userId" [(ngModel)] ="userId" >
+        <a href="#" class="active" style="background-color: #101010;width:220px;padding-top:10px;">User Id</a>
+      <input type="text" id="userId" [(ngModel)] ="userId" style="width:220px;" >
     </div>
   </div>
  

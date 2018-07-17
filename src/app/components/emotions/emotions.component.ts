@@ -13,6 +13,7 @@ export class EmotionsComponent implements OnInit {
   jobNameStatus: String;
   public loading = false;
   emotions: Emotion; 
+  myImgUrl:string;
 
 
   public constructor(public _alertService: AlertCenterService, private _router: Router, private route: ActivatedRoute, private _fb: FormBuilder
@@ -33,6 +34,10 @@ export class EmotionsComponent implements OnInit {
     
       let key = Object.keys(params).reduce((a, b) => params[a] > params[b] ? a : b);  
       console.log( ` max key: ${key}` );
+
+      this.myImgUrl = `assets/img/${key}.png`;
+
+
 
     });
 

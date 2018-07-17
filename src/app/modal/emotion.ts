@@ -4,6 +4,7 @@ export class Emotion{
     fear: any;
     sadness: any;
     surprise: any;
+    emotionStatus : any;
    
 
 }
